@@ -1,7 +1,6 @@
 package com.vektorel.hsjp.main.melisceylan;
-
+//string::cümle/kelime/harf tanýmlar (sayý tanýmlanamaz kabul edilmez.)
 import java.util.Scanner;
-
 public class helloworld {
 	public static void main (String[] args){
 		helloworld test = new helloworld();
@@ -16,13 +15,14 @@ public class helloworld {
 		Scanner k = new Scanner(System.in);
 		System.out.println("Mesajýnýzý nedir?");
 		String mesaj = k.nextLine();
-			System.out.println("Mesaj :: " +mesaj);
+		System.out.println("Mesaj :: " +mesaj);
+		k.close();
 	}
 	public void basitTekrarciMetod() {
 		Scanner k = new Scanner(System.in);
 		System.out.println("Mesajýnýz nedir?");
 		String mesaj = k.nextLine();
-		System.out.println("Mesaj :: " + mesaj + mesaj + mesaj);
-	}
-	
+		System.out.println("Mesaj :: " + mesaj.toUpperCase() + mesaj + mesaj.toUpperCase()); 
+		// toUpperCase metodu stringi büyük harfle yazar.
+		}
 }
