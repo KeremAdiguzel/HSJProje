@@ -6,17 +6,20 @@ public class HelloWorld {
 	
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
 		
+		HelloWorld testNesneKopyasi = new HelloWorld();		
+		testNesneKopyasi.basitTekrarciMetod();
 		
-		HelloWorld testNesneKopyasi = new HelloWorld();
+//		testNesneKopyasi.ekranaMesajYazanMetod();
+//		
+//		testNesneKopyasi.ekranaMesajYazanMetod();
+//		
+//		testNesneKopyasi.ekrandanMesajAlanMetod();		
 		
-		
-		testNesneKopyasi.ekranaMesajYazanMetod();
-		
-		testNesneKopyasi.ekranaMesajYazanMetod();
-		
-		testNesneKopyasi.ekrandanMesajAlanMetod();
+		/* Basit
+		  Bir
+		 Açýklama  */
 	}
 	
 	
@@ -37,6 +40,16 @@ public class HelloWorld {
 		String kullanicininGirdigiMesaj = scanner.nextLine();
 		
 		System.out.println("Kullanýcýnýn Girdiði Mesaj =" + kullanicininGirdigiMesaj );
+
+	}
+	
+	public void basitTekrarciMetod() {
+		
+		Scanner scanner=new Scanner(System.in);
+		
+		String kullanicininGirdigiMesaj = scanner.nextLine();
+		
+		System.out.println(kullanicininGirdigiMesaj + kullanicininGirdigiMesaj+" "+ kullanicininGirdigiMesaj);
 
 	}
 
