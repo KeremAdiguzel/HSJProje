@@ -6,9 +6,10 @@ public class HelloWorld {
 	
 	public static void main(String[] args) {
 		HelloWorld test =new HelloWorld(); 
-		test.ekranaMesajYazanMetod();
-		test.ekranaMesajYazanMetod();
-		test.ekrandanMesajAlanMetod();
+//		test.ekranaMesajYazanMetod();
+//		test.ekranaMesajYazanMetod();
+//		test.ekrandanMesajAlanMetod();
+		test.basitTekrarciMetod();
 	}
 	
 	public static void ekranaMesajYazanMetod() {
@@ -25,6 +26,15 @@ public class HelloWorld {
 			
 			System.out.println("Kullancýnýn Girdiði Mesaj=" + kullanicininGirdiðiMesaj);
 				
+
+		}
+		
+		public void basitTekrarciMetod() {
+			
+			Scanner scanner =new Scanner(System.in);
+			String kullanicininGirdiðiMesaj = scanner.nextLine();
+			
+			System.out.println(kullanicininGirdiðiMesaj +" "+ kullanicininGirdiðiMesaj +" "+ kullanicininGirdiðiMesaj);
 
 		}
 
