@@ -8,15 +8,17 @@ public class HelloWorld {
 		
 		HelloWorld test = new HelloWorld();
 	
-		test.ekranayaziyazanmetod(); 
+		test.basittekrarcimetod(); 
 		
-		HelloWorld tt = new HelloWorld();
+	}
+		
+		/*HelloWorld tt = new HelloWorld();
 		
 		tt.ekranayaziyazdiranmetod();
 		
 	}	
-	
-	public void ekranayaziyazanmetod() {
+	*/
+	/* public void ekranayaziyazanmetod() {
 		
 		System.out.println("Ekrana yazi yazan metod calismaya basladi.");
 		
@@ -38,6 +40,16 @@ public class HelloWorld {
 		
 		System.out.println("Ekrana yazi yazdiran metod bitti.");
 		
+	} */
+	
+	public void basittekrarcimetod() {
+		
+		Scanner keyb = new Scanner(System.in);
+		
+		String girdi = keyb.nextLine();
+		
+		System.out.println("Ekrana uc kere yazilan yazi = " + girdi + girdi + girdi);
+
 	}
 }
 
